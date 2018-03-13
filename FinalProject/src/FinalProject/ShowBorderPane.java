@@ -23,9 +23,8 @@ public class ShowBorderPane extends Application {
     
     public void start(Stage primaryStage) {
         
-        // Create a border pane 
+        // Create a pane 
         BorderPane pane = new BorderPane();
-        BorderPane pane2 = new BorderPane();
 
         // Create the board & TextFields
         pane.setCenter(new Board("Board")); 
@@ -39,7 +38,7 @@ public class ShowBorderPane extends Application {
     }
 
 /**
- * Calls the pane, and launches it in main.
+ * Calls the start method, and launches it in main.
  * @param args 
  */
 public static void main(String[] args){
@@ -56,7 +55,7 @@ class Board extends StackPane {
         getChildren().add(new Label(title));
         //Remove below once the alignment is good, unless we want to see the border?
         setStyle("-fx-border-color: black");
-        setPadding(new Insets(250, 500, 250, 500)); //set padding
+        setPadding(new Insets(250, 500, 250, 500)); 
     }
 }
 
@@ -69,7 +68,7 @@ class Text extends StackPane{
         getChildren().add(new Label(title));
         //Remove below once the alignment is good, unless we want to see the border?
         setStyle("-fx-border-color: green");
-        setPadding(new Insets(10, 10, 10, 10)); //set padding
+        setPadding(new Insets(10, 10, 10, 10)); 
     }
 }
 
