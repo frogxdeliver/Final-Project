@@ -56,7 +56,7 @@ class Board extends StackPane {
         getChildren().add(new Label(title));
         //Remove below once the alignment is good, unless we want to see the border?
         setStyle("-fx-border-color: black");
-        setPadding(new Insets(10, 10, 10, 10)); //set padding
+        setPadding(new Insets(250, 500, 250, 500)); //set padding
     }
 }
 
