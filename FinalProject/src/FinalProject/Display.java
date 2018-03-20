@@ -29,7 +29,7 @@ public class Display extends Application {
 
         // Create the board & TextFields
         pane.setCenter(new boardProperties("Board"));
-        pane.setBottom(new textProperties("TextField"));
+        pane.setRight(new rightProperties("Right"));
         
 
         // Create a scene and place it in the stage
@@ -65,12 +65,12 @@ class boardProperties extends StackPane {
 /**
  * Create a text field that will display information to the player.
  */
-class textProperties extends StackPane{
-    public textProperties(String title){
+class rightProperties extends StackPane{
+    public rightProperties(String title){
         getChildren().add(new Label(title));
         //Remove below once the alignment is good, unless we want to see the border?
         setStyle("-fx-border-color: green");
-        setPadding(new Insets(10, 10, 10, 10)); 
+        setPadding(new Insets(10, 150, 10, 150)); 
     }
 }
 
